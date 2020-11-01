@@ -46,19 +46,20 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> photos = new List(456);
-    UserBuilder userBuilder = new UserBuilder();
     List<User> followers = new List(602);
     List<User> follows = new List(290);
-    User user = userBuilder.firstName("Anna").
-    lastName("Alvarado").
-    workPlace("Guildhall School of Music & Drama").
-    city("London").
-    country("UK").
-    photos(photos).
-    followers(followers).
-    follows(follows).
-    avatar("lib/assets/avatar.PNG").
-    build();
+
+    User user = new User(
+      firstName: "Anna",
+      lastName: "Alvarado",
+      workPlace: "Guildhall School of Music & Drama",
+      city: "London",
+      country: "UK",
+      photos: photos,
+      followers: followers,
+      follows: follows,
+      avatar: "lib/assets/avatar.PNG"
+    );
 
     return Scaffold(
       body: SafeArea(

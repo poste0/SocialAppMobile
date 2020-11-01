@@ -6,44 +6,44 @@ import 'main.dart';
 class ConversationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    UserBuilder userBuilder = new UserBuilder();
-    User user = userBuilder.firstName("Anna").
-    lastName("Alvarado").
-    workPlace("Guildhall School of Music & Drama").
-    city("London").
-    country("UK").
-    avatar("lib/assets/avatar.PNG").
-    build();
+    User user = new User(
+        firstName: "Anna",
+        lastName: "Alvarado",
+        workPlace: "Guildhall School of Music & Drama",
+        city: "London",
+        country: "UK",
+        avatar: "lib/assets/avatar.PNG"
+    );
 
-    User beverlyJones = new UserBuilder().
-        firstName("Beverly").
-        lastName("Jones").
-        avatar("lib/assets/BeverlyJones.PNG").
-        build();
+    User beverlyJones = new User(
+      firstName: "Beverly",
+      lastName: "Jones",
+      avatar: "lib/assets/BeverlyJones.PNG"
+    );
 
-    User crystalFlores = new UserBuilder().
-        firstName("Crystal").
-        lastName("Flores").
-        avatar("lib/assets/CrystalFlores.PNG").
-        build();
+    User crystalFlores = new User(
+      firstName: "Crystal",
+      lastName: "Flores",
+      avatar: "lib/assets/CrystalFlores.PNG"
+    );
 
-    User brittanyHarts = new UserBuilder().
-    firstName("Brittany").
-    lastName("Hart").
-    avatar("lib/assets/BrittanyHart.PNG").
-    build();
+    User brittanyHarts = new User(
+      firstName: "Brittany",
+      lastName: "Hart",
+      avatar: "lib/assets/BrittanyHart.PNG"
+    );
 
-    User deborahFlores = new UserBuilder().
-    firstName("Deborah").
-    lastName("Flores").
-    avatar("lib/assets/DeborahFlores.PNG").
-    build();
+    User deborahFlores = new User(
+      firstName: "Deborah",
+      lastName: "Flores",
+      avatar: "lib/assets/DeborahFlores.PNG"
+    );
 
-    User harleyQuinn = new UserBuilder().
-    firstName("Harley").
-    lastName("Quinn").
-    avatar("lib/assets/HarleyQuinn.PNG").
-    build();
+    User harleyQuinn = new User(
+      firstName: "Harley",
+      lastName: "Quinn",
+      avatar: "lib/assets/HarleyQuinn.PNG"
+    );
 
     List<Pair<User, String>> users = [];
     users.add(new Pair(beverlyJones, "You know you're in love when"));
