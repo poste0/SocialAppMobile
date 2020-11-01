@@ -43,28 +43,6 @@ class Pair<F, S>{
 }
 
 class MyHomePage extends StatelessWidget {
-  Widget _settingsPopup() => PopupMenuButton(
-    itemBuilder: (context) => [
-        PopupMenuItem(
-          value: 1,
-        )
-      ],
-    icon: Icon(
-      Icons.power_input_outlined
-    ),
-  );
-
-  Widget _notificationButton() => IconButton(
-    onPressed: null,
-    icon: Icon(
-      Icons.notifications
-    ),
-  );
-
-  final TextStyle _mainTitleStyle = TextStyle(
-    color:  Colors.black,
-  );
-
   @override
   Widget build(BuildContext context) {
     List<String> photos = new List(456);
@@ -89,7 +67,7 @@ class MyHomePage extends StatelessWidget {
               Card(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+                  padding: EdgeInsets.fromLTRB(20, 40, 0, 0),
                   child: Column(
                     children: [
                       ApplicationBar(
@@ -205,13 +183,13 @@ class MyHomePage extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  child: Padding(padding: EdgeInsets.fromLTRB(20, 40, 20, 0),
+                  child: Padding(padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                     child: Row(
                         children: [
                           Column(
                             children: [
                               Container(
-                                height: MediaQuery.of(context).size.height * 0.32 + 10,
+                                height: MediaQuery.of(context).size.height * 0.24 + 10,
                                 width: MediaQuery.of(context).size.width * 0.4,
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
@@ -224,7 +202,7 @@ class MyHomePage extends StatelessWidget {
                             child: Column(
                               children: [
                                 Container(
-                                  height: MediaQuery.of(context).size.height * 0.16,
+                                  height: MediaQuery.of(context).size.height * 0.12,
                                   width: MediaQuery.of(context).size.width * 0.42,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
@@ -233,7 +211,7 @@ class MyHomePage extends StatelessWidget {
                                 ),
                                 SizedBox(height: 10),
                                 Container(
-                                  height: MediaQuery.of(context).size.height * 0.16,
+                                  height: MediaQuery.of(context).size.height * 0.12,
                                   width: MediaQuery.of(context).size.width * 0.42,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
@@ -249,6 +227,28 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ),
               )
+              /*Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Image(image: AssetImage("lib/assets/Image4.PNG"), fit: BoxFit.fill),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Image(image: AssetImage("lib/assets/Image4.PNG"), fit: BoxFit.fill),
+                       
+                      ],
+                    ),
+                  ),
+
+                ],
+              )
+
+               */
             ],
           ),
 
